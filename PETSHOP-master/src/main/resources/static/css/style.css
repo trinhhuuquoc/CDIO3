@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--mautrang-dam);
+}
+:root{
+    --mauden: #010101;
+    --danger:#dc3545;
+    --mautrang-dam: #F1F0F1;
+    --mautrang-nhat: #FFFFFF;
+}
+/*begin header*/
+#header{
+    background-color: var(--mautrang-dam);
+}
+#header .nav-link .items i,span{
+    color: var(--mauden);
+    font-weight: 600;
+}
+#header img.logo{
+    width: 115px;
+    height: 57px;
+    border-radius: 10px;
+}
+#header .row{
+    display: flex;
+    align-items: center;
+}
+#header #txtSearch{
+    width: 180px;
+}
+
+
+#header .form-info-user{
+    position: relative;
+}
+
+#header .form-info-user:hover #action-more{
+    opacity: 1;
+    visibility: visible;
+}
+
+#header #action-more{
+    position: absolute;
+    top: 56px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+#action-more ::before{
+    content: "";
+    position: absolute;
+    top: -21px;
+    left: 63px;
+    width: 7px;
+    height: 8px;
+    border: 11px solid rgba(0, 0, 0, 0);
+    border-bottom-color: white;
+}
+#header #action-more ul{
+    list-style: none;
+    background-color:var(--mautrang-nhat);
+}
+
+#header #action-more ul li{
+    transition: 0.4s;
+}
+
+#header #action-more ul li:hover{
+    background-color: var(--danger);
+}
+
+#btnLogout{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: inline;
+    outline: none;
+    text-decoration: none;
+}
+/*end custom css form-info-user*/
+
+
+#header div.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 134px;
+}
+#header div.items i{
+    width: 25%;
+    font-size: 34px;
+}
+#header div.items span{
+    width: 65%;
+    font-size: 13px;
+}
+/*end header*/
+
+/*begin sidebar*/
+#sidebar{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#sidebar a{
+    text-decoration: none;
+    transition: 0.2s;
+    color: #343a40;
+}
+
+#sidebar a:hover{
+    background-color: #dc3545;
+    border-radius: 4px;
+    color: white;
+}
+/*end sidebar*/
+
+.my_card {
+    height: 380px;
+
+}
+
+.my_card .card-header {
+    width: 100%;
+    height: 66%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.my_card .card-header .card-img {
+    width: 100%;
+    height: 100%;
+    transition: 0.9s;
+}
+
+.my_card .card-header .card-img:hover {
+    transform: scale(1.1);
+}
+
+.my_card .card-header a.add-to-card {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    /*color: #17a2b8ed;*/
+    transition: 0.6s;
+    opacity: 0;
+    /*border: 1px solid #17a2b8ed;*/
+    /*border-radius: 4px;*/
+    /*padding: 5px;*/
+}
+
+.my_card .card-header a.add-to-card i {
+    /*font-size: 30px;*/
+}
+
+.my_card .card-header a.add-to-card:hover {
+    /*background-color: #17a2b8ed;*/
+}
+
+.my_card .card-header a.add-to-card:hover i {
+
+}
+
+.my_card .card-header:hover a.add-to-card {
+    bottom: 25px;
+    opacity: 1;
+}
+
+.my_card .body {
+    overflow: hidden;
+    height: 34%;
+    position: relative;
+}
+
+.my_card .body a.name {
+    text-decoration: none;
+    color: black;
+    transition: 0.4s;
+    font-size: 17px;
+    display: block;
+}
+
+.my_card .body a.name:hover {
+    text-decoration: none;
+    color: coral;
+}
+
+.my_card .body p.category {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.my_card .body .unitPrice{
+
+}
+.my_card .body .unitPrice{
+
+}
+.my_card .body .saleoff{
+    position: absolute;
+    right: 3px;
+    bottom: 88px;
+    background-image: url(/images/icon-saleoff.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+    padding-bottom: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.my_card .body .saleoff span{
+    display: block;
+    position: relative;
+    bottom: -6px;
+    right: -8px;
+}
+
+.mona_title {
+    color: #3c3451;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 16px;
+    padding-bottom: 25px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    clear: both;
+    font-family: 'Josefin Sans', serif;
+}
+.mona_title:after {
+    content: "";
+    display: block;
+    background: url(http://mauweb.monamedia.net/dogcatshop/wp-content/uploads/2018/04/sleigh-bell.svg) no-repeat;
+    width: 100px;
+    height: 62px;
+    margin: 10px auto 0;
+    background-size: 100px 62px;
+}
+
+
